@@ -59,3 +59,31 @@ section.s .lead { margin: 0 0 28px; font-size: 18px; color: var(--muted); max-wi
 footer { background: var(--sea-deep); color: #A9C3D4; font-size: 14px; }
 footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; padding-top: 28px; padding-bottom: 28px; }
 footer a { color: #D6E6F0; margin-right: 16px; }
+/* Guías y planes (27-11-2026) */
+.legal .entradilla { font-size: 19px; line-height: 1.55; color: var(--muted); }
+.legal .miga { margin: 0 0 8px; font-weight: 800; font-size: 15px; }
+.legal .miga a { color: var(--turq); text-decoration: none; }
+.legal ul { padding-left: 22px; }
+.legal .nota { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; margin-top: 32px; }
+.legal .fuentes li { font-size: 15px; }
+.tabla { overflow-x: auto; margin: 12px 0 8px; }
+.tabla table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 16px; }
+.tabla th, .tabla td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; color: #22465F; }
+.tabla th { background: var(--foam); font-weight: 900; color: var(--ink); }
+.caja-app { background: #E6F7FA; border-left: 6px solid var(--turq); border-radius: 14px; padding: 18px 20px; margin: 32px 0 8px; font-size: 17px; line-height: 1.55; color: #22465F; }
+.caja-app a { font-weight: 900; color: var(--ink); }
+.guias { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 20px; }
+.guia { display: block; background: var(--foam); border-radius: 20px; padding: 22px; text-decoration: none; color: var(--ink); border: 2px solid transparent; }
+.guia:hover, .guia:focus-visible { border-color: var(--turq); }
+.guia h2, .guia h3 { margin: 0 0 8px; font-size: 20px; font-weight: 900; }
+.legal .guia p, .guia p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); }
+.planes { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.plan { border-radius: 22px; padding: 26px; background: var(--foam); }
+.plan.plus { background: var(--sea); color: #fff; }
+.plan h3 { margin: 0 0 4px; font-size: 24px; font-weight: 900; }
+.plan .sub { margin: 0 0 14px; color: var(--muted); font-weight: 700; }
+.plan.plus .sub { color: #9BE3EE; }
+.plan ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.plan li { font-size: 16px; line-height: 1.45; padding-left: 28px; position: relative; }
+.plan li::before { content: "✓"; position: absolute; left: 0; font-weight: 900; color: var(--turq); }
+.plan.plus li::before { color: var(--yellow); }
